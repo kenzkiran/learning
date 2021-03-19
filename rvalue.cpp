@@ -28,11 +28,12 @@ int main() {
   // strangely you can increment
   cout<<++t<<endl;
 
-  string m("I am a lvalue");
+  string m("I am a lvalue\n");
 
   cout<<(void *)&m;
   printReference(m);
   printReference(getName());
+  printReference("ravi");
 
   string& s = refRet();
   cout<<s;
